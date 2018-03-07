@@ -55,7 +55,7 @@ vector<UserAndProcess> numberSystemProcessByUser() {
     int numberOfProcess;
     string user;
 
-    UserAndProcess aux ;
+    UserAndProcess aux;
 
 
     while (reader >> numberOfProcess) {
@@ -88,13 +88,39 @@ void printNumberSystemProcessByUser() {
 }
 
 
-int main (void) {
+int main (int argc, char * argv[]) {
 
-    printNumberSystemProcessByUser();
+    /* Argumentos para passar na hora da execução
+    *   -u : quantidade de processos por usuário [0]
+    *   -t : quantidade de processos totais (padrão) [1]
+    *   -m : modo de monitoramento [0]
+    *   -o : imprime os dados do instante em que foi executado (padrão) [1]
+    */
+     
+    int modoMonitoramento = modoImpressao = 1;
 
-    cout << "\n=======================================\n";
+    string input;
 
-    printNumberSystemProcess() ;
+    if (argc > 1) {
+        for (int i = 1; i < argc; ++i) {
+            if (argv[i] == "-u") {
+                modoImpressao = 0;
+            }
+            if (argv[i] == "-t") {
+                modoImpressao = 1;
+            }
+            if (argv[i] == "-m") {
+                modoMonitoramento = 0;
+            }
+            if (argv[i] == "-o") {
+                modoMonitoramento = 1;
+            }
+        }
+    }
+
+    for () {
+        
+    }
 
     return 0;
 
