@@ -1,0 +1,296 @@
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  4.2  0.1 186140  6748 ?        Ss   20:33   1:13 /sbin/init splash
+root         2  0.0  0.0      0     0 ?        S    20:33   0:00 [kthreadd]
+root         4  0.0  0.0      0     0 ?        S<   20:33   0:00 [kworker/0:0H]
+root         6  0.0  0.0      0     0 ?        S<   20:33   0:00 [mm_percpu_wq]
+root         7  0.0  0.0      0     0 ?        S    20:33   0:00 [ksoftirqd/0]
+root         8  0.0  0.0      0     0 ?        S    20:33   0:01 [rcu_sched]
+root         9  0.0  0.0      0     0 ?        S    20:33   0:00 [rcu_bh]
+root        10  0.0  0.0      0     0 ?        S    20:33   0:00 [migration/0]
+root        11  0.0  0.0      0     0 ?        S    20:33   0:00 [watchdog/0]
+root        12  0.0  0.0      0     0 ?        S    20:33   0:00 [cpuhp/0]
+root        13  0.0  0.0      0     0 ?        S    20:33   0:00 [cpuhp/1]
+root        14  0.0  0.0      0     0 ?        S    20:33   0:00 [watchdog/1]
+root        15  0.0  0.0      0     0 ?        S    20:33   0:00 [migration/1]
+root        16  0.0  0.0      0     0 ?        S    20:33   0:00 [ksoftirqd/1]
+root        18  0.0  0.0      0     0 ?        S<   20:33   0:00 [kworker/1:0H]
+root        19  0.0  0.0      0     0 ?        S    20:33   0:00 [cpuhp/2]
+root        20  0.0  0.0      0     0 ?        S    20:33   0:00 [watchdog/2]
+root        21  0.0  0.0      0     0 ?        S    20:33   0:00 [migration/2]
+root        22  0.0  0.0      0     0 ?        S    20:33   0:00 [ksoftirqd/2]
+root        24  0.0  0.0      0     0 ?        S<   20:33   0:00 [kworker/2:0H]
+root        25  0.0  0.0      0     0 ?        S    20:33   0:00 [cpuhp/3]
+root        26  0.0  0.0      0     0 ?        S    20:33   0:00 [watchdog/3]
+root        27  0.0  0.0      0     0 ?        S    20:33   0:00 [migration/3]
+root        28  0.0  0.0      0     0 ?        S    20:33   0:00 [ksoftirqd/3]
+root        30  0.0  0.0      0     0 ?        S<   20:33   0:00 [kworker/3:0H]
+root        31  0.0  0.0      0     0 ?        S    20:33   0:00 [kdevtmpfs]
+root        32  0.0  0.0      0     0 ?        S<   20:33   0:00 [netns]
+root        35  0.0  0.0      0     0 ?        S    20:33   0:00 [kworker/2:1]
+root        36  0.0  0.0      0     0 ?        S    20:33   0:00 [khungtaskd]
+root        37  0.0  0.0      0     0 ?        S    20:33   0:00 [oom_reaper]
+root        38  0.0  0.0      0     0 ?        S<   20:33   0:00 [writeback]
+root        39  0.0  0.0      0     0 ?        S    20:33   0:00 [kcompactd0]
+root        40  0.0  0.0      0     0 ?        SN   20:33   0:00 [ksmd]
+root        41  0.0  0.0      0     0 ?        SN   20:33   0:00 [khugepaged]
+root        42  0.0  0.0      0     0 ?        S<   20:33   0:00 [crypto]
+root        43  0.0  0.0      0     0 ?        S<   20:33   0:00 [kintegrityd]
+root        44  0.0  0.0      0     0 ?        S<   20:33   0:00 [kblockd]
+root        46  0.0  0.0      0     0 ?        S<   20:33   0:00 [ata_sff]
+root        47  0.0  0.0      0     0 ?        S<   20:33   0:00 [md]
+root        48  0.0  0.0      0     0 ?        S<   20:33   0:00 [edac-poller]
+root        49  0.0  0.0      0     0 ?        S<   20:33   0:00 [devfreq_wq]
+root        50  0.0  0.0      0     0 ?        S<   20:33   0:00 [watchdogd]
+root        53  0.0  0.0      0     0 ?        S    20:33   0:00 [kauditd]
+root        54  0.0  0.0      0     0 ?        S    20:33   0:00 [kswapd0]
+root        55  0.0  0.0      0     0 ?        S    20:33   0:00 [ecryptfs-kthrea]
+root        97  0.0  0.0      0     0 ?        S<   20:33   0:00 [kthrotld]
+root        98  0.0  0.0      0     0 ?        S<   20:33   0:00 [acpi_thermal_pm]
+root       104  0.0  0.0      0     0 ?        S<   20:33   0:00 [ipv6_addrconf]
+root       129  0.0  0.0      0     0 ?        S<   20:33   0:00 [charger_manager]
+root       189  0.0  0.0      0     0 ?        S    20:33   0:00 [kworker/3:2]
+root       192  0.0  0.0      0     0 ?        S    20:33   0:00 [scsi_eh_0]
+root       193  0.0  0.0      0     0 ?        S<   20:33   0:00 [scsi_tmf_0]
+root       194  0.0  0.0      0     0 ?        S    20:33   0:00 [scsi_eh_1]
+root       195  0.0  0.0      0     0 ?        S<   20:33   0:00 [scsi_tmf_1]
+root       196  0.0  0.0      0     0 ?        S    20:33   0:00 [scsi_eh_2]
+root       197  0.0  0.0      0     0 ?        S<   20:33   0:00 [scsi_tmf_2]
+root       198  0.0  0.0      0     0 ?        S    20:33   0:00 [scsi_eh_3]
+root       199  0.0  0.0      0     0 ?        S<   20:33   0:00 [scsi_tmf_3]
+root       200  0.0  0.0      0     0 ?        S    20:33   0:00 [scsi_eh_4]
+root       201  0.0  0.0      0     0 ?        S<   20:33   0:00 [scsi_tmf_4]
+root       202  0.0  0.0      0     0 ?        S    20:33   0:00 [scsi_eh_5]
+root       203  0.0  0.0      0     0 ?        S<   20:33   0:00 [scsi_tmf_5]
+root       205  0.1  0.0      0     0 ?        S    20:33   0:02 [kworker/u8:5]
+root       207  0.0  0.0      0     0 ?        S    20:33   0:00 [i915/signal:0]
+root       208  0.0  0.0      0     0 ?        S    20:33   0:00 [i915/signal:1]
+root       209  0.0  0.0      0     0 ?        S    20:33   0:00 [i915/signal:2]
+root       224  0.0  0.0      0     0 ?        S<   20:33   0:00 [kworker/2:1H]
+root       225  0.0  0.0      0     0 ?        S<   20:33   0:00 [kworker/0:1H]
+root       229  0.0  0.0      0     0 ?        S<   20:33   0:00 [kworker/1:1H]
+root       252  0.0  0.0      0     0 ?        S    20:33   0:00 [jbd2/sda4-8]
+root       253  0.0  0.0      0     0 ?        S<   20:33   0:00 [ext4-rsv-conver]
+root       266  0.0  0.0      0     0 ?        S<   20:33   0:00 [kworker/3:1H]
+root       285  0.0  0.0  34800  5092 ?        Ss   20:33   0:00 /lib/systemd/systemd-journald
+root       311  0.0  0.0  46204  5080 ?        Ss   20:33   0:00 /lib/systemd/systemd-udevd
+root       354  0.0  0.0      0     0 ?        S<   20:33   0:00 [asus_wireless_w]
+root       371  0.0  0.0      0     0 ?        S    20:33   0:00 [irq/28-mei_me]
+root       418  0.0  0.0      0     0 ?        S<   20:33   0:00 [cfg80211]
+root       473  0.0  0.0      0     0 ?        S<   20:33   0:00 [led_workqueue]
+root       634  0.0  0.0      0     0 ?        S    20:49   0:00 [kworker/u8:4]
+root       636  0.0  0.0      0     0 ?        S    20:49   0:00 [kworker/0:2]
+root       661  0.0  0.0      0     0 ?        S    20:33   0:00 [jbd2/sda6-8]
+root       662  0.0  0.0      0     0 ?        S<   20:33   0:00 [ext4-rsv-conver]
+root       669  0.0  0.0      0     0 ?        S    20:33   0:00 [jbd2/sda5-8]
+root       670  0.0  0.0      0     0 ?        S<   20:33   0:00 [ext4-rsv-conver]
+systemd+   706  0.0  0.0 102384  2528 ?        Ssl  20:33   0:00 /lib/systemd/systemd-timesyncd
+igor       824  0.0  0.1 205216  6840 ?        Sl   20:49   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+root       833  0.0  0.1 275896  6520 ?        Ssl  20:33   0:00 /usr/lib/accountsservice/accounts-daemon
+root       837  0.0  0.1 413512  9196 ?        Ssl  20:33   0:00 /usr/sbin/ModemManager
+root       848  0.0  0.0  28644  3292 ?        Ss   20:33   0:00 /lib/systemd/systemd-logind
+avahi      849  0.0  0.0  44904  3588 ?        Ss   20:33   0:00 avahi-daemon: running [machine.local]
+message+   851  0.1  0.0  45508  5920 ?        Ss   20:33   0:02 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation
+syslog     890  0.0  0.0 256392  3576 ?        Ssl  20:33   0:00 /usr/sbin/rsyslogd -n
+root       894  0.0  0.1 166440  8696 ?        Ssl  20:33   0:00 /usr/sbin/thermald --no-daemon --dbus-enable
+root       903  0.0  0.3 286900 22876 ?        Ssl  20:33   0:00 /usr/lib/snapd/snapd
+root       904  0.0  0.0   4396  1256 ?        Ss   20:33   0:00 /usr/sbin/acpid
+root       910  0.1  0.2 523508 17184 ?        Ssl  20:33   0:01 /usr/sbin/NetworkManager --no-daemon
+root       912  0.0  0.0  29012  2980 ?        Ss   20:33   0:00 /usr/sbin/cron -f
+igor       926  0.0  0.0  43852  4244 ?        Ss   20:49   0:00 dbus-daemon --fork --session --address=unix:abstract=/tmp/dbus-QCyQguiNwt
+igor       938  0.0  0.1  86352  9912 ?        Ss   20:49   0:00 /usr/lib/x86_64-linux-gnu/hud/window-stack-bridge
+root       987  0.0  0.0      0     0 ?        S<   20:33   0:00 [iprt-VBoxWQueue]
+avahi      991  0.0  0.0  44784   340 ?        S    20:33   0:00 avahi-daemon: chroot helper
+root       993  0.0  0.0      0     0 ?        S    20:33   0:00 [iprt-VBoxTscThr]
+igor       998  0.2  0.1 419092  7016 ?        Ssl  20:49   0:01 /usr/bin/ibus-daemon --daemonize --xim --address unix:tmpdir=/tmp/ibus
+igor      1006  0.0  0.1 274536  6276 ?        Sl   20:49   0:00 /usr/lib/gvfs/gvfsd
+igor      1014  0.0  0.0 406864  4872 ?        Sl   20:49   0:00 /usr/lib/gvfs/gvfsd-fuse /run/user/1000/gvfs -f -o big_writes
+igor      1017  0.0  0.1 264268  6344 ?        Sl   20:49   0:00 /usr/lib/ibus/ibus-dconf
+root      1025  0.0  0.1 276680  6128 ?        SLsl 20:33   0:00 /usr/sbin/lightdm
+root      1027  0.0  0.0  19472   236 ?        Ss   20:33   0:00 /usr/sbin/irqbalance --pid=/var/run/irqbalance.pid
+igor      1058  0.0  0.0 188524  5564 ?        Sl   20:49   0:00 /usr/lib/ibus/ibus-engine-simple
+root      1066  0.0  0.1 278872  8076 ?        Ssl  20:33   0:00 /usr/lib/policykit-1/polkitd --no-debug
+root      1081  0.0  0.4 615432 26132 ?        Sl   20:33   0:00 /usr/local/bin/warsaw/core
+igor      1102  0.0  0.0 338008  5948 ?        Ssl  20:49   0:00 /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately
+igor      1104  0.0  0.2 836832 15204 ?        Ssl  20:49   0:00 /usr/lib/gnome-session/gnome-session-binary --session=ubuntu
+igor      1118  0.0  0.0  42952  4212 ?        S    20:49   0:00 /usr/bin/dbus-daemon --config-file=/etc/at-spi2/accessibility.conf --nofork --print-address 3
+mysql     1124  0.0  2.2 1238660 133768 ?      Ssl  20:33   0:01 /usr/sbin/mysqld
+root      1152  0.0  0.0      0     0 ?        S    20:33   0:00 [ath9k-hwrng]
+root      1154  0.0  0.1  44028  7052 ?        Ss   20:33   0:00 /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
+root      1157  0.0  0.4 221556 25340 ?        Ss   20:33   0:00 php-fpm: master process (/etc/php/7.0/fpm/php-fpm.conf)
+www-data  1159  0.0  0.1 221556  6488 ?        S    20:33   0:00 php-fpm: pool www
+www-data  1160  0.0  0.1 221556  6488 ?        S    20:33   0:00 php-fpm: pool www
+igor      1167  0.0  0.0 178792  5040 ?        Sl   20:49   0:00 /usr/lib/dconf/dconf-service
+igor      1212  0.0  0.1 354428  7152 ?        Ssl  20:49   0:00 /usr/lib/x86_64-linux-gnu/indicator-messages/indicator-messages-service
+igor      1213  0.0  0.0 407124  5716 ?        Ssl  20:49   0:00 /usr/lib/x86_64-linux-gnu/indicator-bluetooth/indicator-bluetooth-service
+igor      1216  0.0  0.1 571032 10852 ?        Ssl  20:49   0:00 /usr/lib/x86_64-linux-gnu/indicator-power/indicator-power-service
+root      1220  0.0  0.0      0     0 ?        S<   20:33   0:00 [kworker/u9:0]
+igor      1222  0.0  0.2 1233072 16752 ?       Ssl  20:49   0:00 /usr/lib/x86_64-linux-gnu/indicator-datetime/indicator-datetime-service
+root      1223  0.0  0.0      0     0 ?        S<   20:33   0:00 [kworker/u9:2]
+igor      1225  0.0  0.1 737004 10800 ?        Ssl  20:49   0:00 /usr/lib/x86_64-linux-gnu/indicator-sound/indicator-sound-service
+igor      1227  0.0  0.1 952876  6640 ?        Ssl  20:49   0:00 /usr/lib/x86_64-linux-gnu/indicator-session/indicator-session-service
+root      1238  0.0  0.0  32116  4380 ?        Ss   20:33   0:00 /usr/lib/bluetooth/bluetoothd
+igor      1250  0.0  0.2 403148 12924 ?        Ssl  20:49   0:00 /usr/lib/x86_64-linux-gnu/indicator-application/indicator-application-service
+igor      1263  0.0  0.3 702216 23376 ?        Sl   20:49   0:00 /usr/lib/evolution/evolution-source-registry
+igor      1328  0.0  1.0 863020 59956 ?        Sl   20:49   0:00 /usr/lib/evolution/evolution-calendar-factory
+whoopsie  1330  0.0  0.2 382180 12484 ?        Ssl  20:33   0:00 /usr/bin/whoopsie -f
+root      1336  0.0  0.0  15940  1816 tty1     Ss+  20:33   0:00 /sbin/agetty --noclear tty1 linux
+igor      1360  0.0  0.1 285452  7640 ?        Sl   20:49   0:00 /usr/lib/gvfs/gvfs-udisks2-volume-monitor
+rtkit     1363  0.0  0.0 183544  3176 ?        SNsl 20:33   0:00 /usr/lib/rtkit/rtkit-daemon
+root      1366  0.0  0.1 347436 10432 ?        Ssl  20:33   0:00 /usr/lib/upower/upowerd
+root      1377  0.0  0.0      0     0 ?        S<   20:33   0:00 [krfcommd]
+igor      1380  0.0  0.0 259644  4988 ?        Sl   20:49   0:00 /usr/lib/gvfs/gvfs-mtp-volume-monitor
+igor      1388  0.0  0.1  59384  7124 ?        S    20:49   0:00 /usr/local/bin/warsaw/wsatspi
+igor      1389  0.0  0.8 881536 49796 ?        Sl   20:49   0:00 /usr/lib/evolution/evolution-calendar-factory-subprocess --factory contacts --bus-name org.gnome.evolution.dataserver.Subprocess.Backend.Calendarx1328x2 --own-path /org/gnome/evolution/dataserver/Subprocess/Backend/Calendar/1328/2
+igor      1398  0.0  0.0 257540  4316 ?        Sl   20:49   0:00 /usr/lib/gvfs/gvfs-goa-volume-monitor
+igor      1403  0.0  0.1 403608  8848 ?        Sl   20:49   0:00 /usr/lib/gvfs/gvfs-afc-volume-monitor
+colord    1409  0.0  0.1 301300 11152 ?        Ssl  20:33   0:00 /usr/lib/colord/colord
+igor      1418  0.0  0.0 271840  5456 ?        Sl   20:49   0:00 /usr/lib/gvfs/gvfs-gphoto2-volume-monitor
+igor      1429  0.0  0.3 690576 18220 ?        Sl   20:49   0:00 /usr/lib/evolution/evolution-addressbook-factory
+igor      1432  0.0  0.0  45348  5292 ?        Ss   20:34   0:00 /lib/systemd/systemd --user
+igor      1433  0.0  0.0  63700  2328 ?        S    20:34   0:00 (sd-pam)
+igor      1434  0.0  0.8 931320 49536 ?        Sl   20:49   0:00 /usr/lib/evolution/evolution-calendar-factory-subprocess --factory local --bus-name org.gnome.evolution.dataserver.Subprocess.Backend.Calendarx1328x3 --own-path /org/gnome/evolution/dataserver/Subprocess/Backend/Calendar/1328/3
+igor      1444  0.0  0.3 766080 18048 ?        Sl   20:49   0:00 /usr/lib/evolution/evolution-addressbook-factory-subprocess --factory local --bus-name org.gnome.evolution.dataserver.Subprocess.Backend.AddressBookx1429x2 --own-path /org/gnome/evolution/dataserver/Subprocess/Backend/AddressBook/1429/2
+igor      1610  0.0  0.1 350576  6348 ?        Sl   20:49   0:00 /usr/lib/gvfs/gvfsd-trash --spawner :1.6 /org/gtk/gvfs/exec_spaw/0
+igor      1639  0.0  0.1 426676  6792 ?        Sl   20:49   0:00 /usr/lib/gvfs/gvfsd-network --spawner :1.6 /org/gtk/gvfs/exec_spaw/2
+igor      1668  0.0  0.1 361716  7212 ?        Sl   20:49   0:00 /usr/lib/gvfs/gvfsd-dnssd --spawner :1.6 /org/gtk/gvfs/exec_spaw/5
+nobody    1672  0.0  0.0  52868  4148 ?        S    20:34   0:00 /usr/sbin/dnsmasq --no-resolv --keep-in-foreground --no-hosts --bind-interfaces --pid-file=/var/run/NetworkManager/dnsmasq.pid --listen-address=127.0.1.1 --cache-size=0 --conf-file=/dev/null --proxy-dnssec --enable-dbus=org.freedesktop.NetworkManager.dnsmasq --conf-dir=/etc/NetworkManager/dnsmasq.d
+igor      1677  0.0  0.2 518492 16756 ?        Sl   20:49   0:00 zeitgeist-datahub
+igor      1684  0.0  0.0   4504   752 ?        S    20:49   0:00 /bin/sh -c /usr/lib/x86_64-linux-gnu/zeitgeist/zeitgeist-maybe-vacuum; /usr/bin/zeitgeist-daemon
+igor      1688  0.0  0.1 410360  7260 ?        Sl   20:49   0:00 /usr/bin/zeitgeist-daemon
+igor      1695  0.0  0.2 317188 14912 ?        Sl   20:49   0:00 /usr/lib/x86_64-linux-gnu/zeitgeist-fts
+igor      1806  0.0  0.1 435456  7092 ?        Sl   20:51   0:00 /usr/lib/x86_64-linux-gnu/deja-dup/deja-dup-monitor
+igor      1819  0.0  0.2 645048 16848 ?        Sl   20:51   0:00 /usr/lib/x86_64-linux-gnu/unity-scope-home/unity-scope-home
+igor      1829  0.0  0.3 582152 22420 ?        Sl   20:51   0:00 /usr/bin/unity-scope-loader applications/applications.scope applications/scopes.scope commands.scope
+igor      1831  0.0  0.2 647132 13016 ?        Sl   20:51   0:00 /usr/lib/x86_64-linux-gnu/unity-lens-files/unity-files-daemon
+igor      1884  0.0  0.0  61172  5356 ?        S    20:51   0:00 /usr/lib/x86_64-linux-gnu/gconf/gconfd-2
+root      2043  0.0  0.5 505020 32892 ?        Ssl  20:34   0:00 /usr/lib/x86_64-linux-gnu/fwupd/fwupd
+root      2063  0.0  0.1 367048  8076 ?        Ssl  20:34   0:00 /usr/lib/udisks2/udisksd --no-debug
+igor      2110  0.0  0.1  59160  6848 ?        S    20:34   0:00 /usr/local/bin/warsaw/wsatspi
+root      3072  0.0  0.1  93236  7504 ?        Ss   20:38   0:00 /usr/sbin/cupsd -l
+root      3073  0.0  0.1 274816  9776 ?        Ssl  20:38   0:00 /usr/sbin/cups-browsed
+lp        3074  0.0  0.0  81244  5628 ?        S    20:38   0:00 /usr/lib/cups/notifier/dbus dbus://
+lp        3075  0.0  0.0  81244  5608 ?        S    20:38   0:00 /usr/lib/cups/notifier/dbus dbus://
+lp        3076  0.0  0.0  81244  5632 ?        S    20:38   0:00 /usr/lib/cups/notifier/dbus dbus://
+lp        3077  0.0  0.0  81244  5572 ?        S    20:38   0:00 /usr/lib/cups/notifier/dbus dbus://
+lp        3078  0.0  0.0  81244  5624 ?        S    20:38   0:00 /usr/lib/cups/notifier/dbus dbus://
+lp        3079  0.0  0.0  81244  5820 ?        S    20:38   0:00 /usr/lib/cups/notifier/dbus dbus://
+lp        3080  0.0  0.0  81244  5660 ?        S    20:38   0:00 /usr/lib/cups/notifier/dbus dbus://
+lp        3081  0.0  0.0  81244  5632 ?        S    20:38   0:00 /usr/lib/cups/notifier/dbus dbus://
+lp        3082  0.0  0.0  81244  5616 ?        S    20:38   0:00 /usr/lib/cups/notifier/dbus dbus://
+lp        3083  0.0  0.0  81244  5660 ?        S    20:38   0:00 /usr/lib/cups/notifier/dbus dbus://
+root      3271  0.1  0.0      0     0 ?        D    20:44   0:01 [kworker/u8:1]
+igor      5588  0.0  0.1 205220  6860 ?        Sl   20:54   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+igor      5677  0.1  0.0  43720  4180 ?        Ss   20:54   0:00 dbus-daemon --fork --session --address=unix:abstract=/tmp/dbus-9J9KwFWN1w
+igor      5689  0.0  0.1  86352  9916 ?        Ss   20:54   0:00 /usr/lib/x86_64-linux-gnu/hud/window-stack-bridge
+igor      5749  0.0  0.1 274536  6456 ?        Sl   20:54   0:00 /usr/lib/gvfs/gvfsd
+igor      5803  0.0  0.1 338008  5984 ?        Ssl  20:54   0:00 /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately
+igor      5805  0.0  0.2 779744 15288 ?        Ssl  20:54   0:00 /usr/lib/gnome-session/gnome-session-binary --session=ubuntu
+igor      5818  0.1  0.0  43004  4004 ?        S    20:54   0:00 /usr/bin/dbus-daemon --config-file=/etc/at-spi2/accessibility.conf --nofork --print-address 3
+igor      5863  0.0  0.0 178792  5056 ?        Sl   20:54   0:00 /usr/lib/dconf/dconf-service
+igor      5871  0.0  0.1 354404  7024 ?        Ssl  20:54   0:00 /usr/lib/x86_64-linux-gnu/indicator-messages/indicator-messages-service
+igor      5872  0.0  0.0 407124  5620 ?        Ssl  20:54   0:00 /usr/lib/x86_64-linux-gnu/indicator-bluetooth/indicator-bluetooth-service
+igor      5873  0.0  0.1 571028 10852 ?        Ssl  20:54   0:00 /usr/lib/x86_64-linux-gnu/indicator-power/indicator-power-service
+igor      5879  0.0  0.2 1233120 16804 ?       Ssl  20:54   0:00 /usr/lib/x86_64-linux-gnu/indicator-datetime/indicator-datetime-service
+igor      5885  0.0  0.1 663256 10408 ?        Ssl  20:54   0:00 /usr/lib/x86_64-linux-gnu/indicator-sound/indicator-sound-service
+igor      5889  0.0  0.1 952884  6656 ?        Ssl  20:54   0:00 /usr/lib/x86_64-linux-gnu/indicator-session/indicator-session-service
+igor      5892  0.0  0.2 476880 13268 ?        Ssl  20:54   0:00 /usr/lib/x86_64-linux-gnu/indicator-application/indicator-application-service
+igor      5918  0.0  0.3 702220 23640 ?        Sl   20:54   0:00 /usr/lib/evolution/evolution-source-registry
+igor      5949  0.0  1.0 863020 59884 ?        Sl   20:54   0:00 /usr/lib/evolution/evolution-calendar-factory
+igor      5999  0.0  0.1 285452  7600 ?        Sl   20:54   0:00 /usr/lib/gvfs/gvfs-udisks2-volume-monitor
+igor      6022  0.0  0.0 259644  4976 ?        Sl   20:54   0:00 /usr/lib/gvfs/gvfs-mtp-volume-monitor
+igor      6037  0.0  0.1  59204  6868 ?        S    20:54   0:00 /usr/local/bin/warsaw/wsatspi
+igor      6041  0.0  0.0 257540  4316 ?        Sl   20:54   0:00 /usr/lib/gvfs/gvfs-goa-volume-monitor
+igor      6050  0.0  0.1 403608  8964 ?        Sl   20:54   0:00 /usr/lib/gvfs/gvfs-afc-volume-monitor
+igor      6051  0.0  0.8 881532 50044 ?        Sl   20:54   0:00 /usr/lib/evolution/evolution-calendar-factory-subprocess --factory contacts --bus-name org.gnome.evolution.dataserver.Subprocess.Backend.Calendarx5949x2 --own-path /org/gnome/evolution/dataserver/Subprocess/Backend/Calendar/5949/2
+igor      6057  0.0  0.0 271840  5656 ?        Sl   20:54   0:00 /usr/lib/gvfs/gvfs-gphoto2-volume-monitor
+igor      6073  0.0  0.8 865784 49596 ?        Sl   20:54   0:00 /usr/lib/evolution/evolution-calendar-factory-subprocess --factory local --bus-name org.gnome.evolution.dataserver.Subprocess.Backend.Calendarx5949x3 --own-path /org/gnome/evolution/dataserver/Subprocess/Backend/Calendar/5949/3
+igor      6075  0.0  0.3 690576 18176 ?        Sl   20:54   0:00 /usr/lib/evolution/evolution-addressbook-factory
+igor      6083  0.0  0.2 839808 17928 ?        Sl   20:54   0:00 /usr/lib/evolution/evolution-addressbook-factory-subprocess --factory local --bus-name org.gnome.evolution.dataserver.Subprocess.Backend.AddressBookx6075x2 --own-path /org/gnome/evolution/dataserver/Subprocess/Backend/AddressBook/6075/2
+igor      6104  0.0  0.1 350572  6608 ?        Sl   20:54   0:00 /usr/lib/gvfs/gvfsd-trash --spawner :1.5 /org/gtk/gvfs/exec_spaw/0
+root      6250  0.0  0.0      0     0 ?        S    20:54   0:00 [kworker/0:1]
+igor      6252  0.0  0.2 518496 16628 ?        Sl   20:54   0:00 zeitgeist-datahub
+igor      6259  0.0  0.0   4504   704 ?        S    20:54   0:00 /bin/sh -c /usr/lib/x86_64-linux-gnu/zeitgeist/zeitgeist-maybe-vacuum; /usr/bin/zeitgeist-daemon
+igor      6263  0.0  0.1 410212  7384 ?        Sl   20:54   0:00 /usr/bin/zeitgeist-daemon
+root      6288  0.0  0.0      0     0 ?        S    20:54   0:00 [kworker/1:1]
+root      6289  0.0  0.0      0     0 ?        S    20:54   0:00 [kworker/1:3]
+igor      6308  0.0  0.1 352944  6820 ?        Sl   20:55   0:00 /usr/lib/gvfs/gvfsd-network --spawner :1.5 /org/gtk/gvfs/exec_spaw/1
+igor      6339  0.0  0.0 186076  5204 ?        Sl   20:55   0:00 /usr/lib/gvfs/gvfsd-metadata
+igor      6348  0.0  0.1 361720  6660 ?        Sl   20:55   0:00 /usr/lib/gvfs/gvfsd-dnssd --spawner :1.5 /org/gtk/gvfs/exec_spaw/5
+igor      6412  0.0  0.1 435460  7020 ?        Sl   20:56   0:00 /usr/lib/x86_64-linux-gnu/deja-dup/deja-dup-monitor
+root      6423  0.0  0.0      0     0 ?        S    20:56   0:00 [kworker/3:4]
+igor      6448  0.0  0.0  61172  5420 ?        S    20:57   0:00 /usr/lib/x86_64-linux-gnu/gconf/gconfd-2
+root      9809  0.1  0.0      0     0 ?        S    20:59   0:00 [kworker/u8:0]
+root     10396  0.0  0.0      0     0 ?        S    20:59   0:00 [kworker/2:0]
+root     10423  0.0  0.0      0     0 ?        S    20:59   0:00 [kworker/u8:2]
+root     10515  0.0  0.0      0     0 ?        S    20:59   0:00 [kworker/2:2]
+root     10520  0.0  0.0      0     0 ?        S    20:59   0:00 [kworker/0:0]
+root     10539  2.9  1.1 399296 67160 tty7     Ssl+ 20:59   0:04 /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+igor     10601  0.0  0.1 445536 11772 ?        S<l  20:59   0:00 /usr/bin/pulseaudio --start --log-target=syslog
+root     10603  0.0  0.1 230304  6488 ?        Sl   20:59   0:00 lightdm --session-child 12 19
+igor     10702  0.0  0.1 205220  6840 ?        Sl   20:59   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+igor     10705  0.1  0.0  46484  4732 ?        Ss   20:59   0:00 /sbin/upstart --user
+igor     10786  0.0  0.0  32864   280 ?        S    20:59   0:00 upstart-udev-bridge --daemon --user
+igor     10794  0.3  0.0  43580  4016 ?        Ss   20:59   0:00 dbus-daemon --fork --session --address=unix:abstract=/tmp/dbus-BmY1cvoIji
+igor     10806  0.0  0.1  86352  9896 ?        Ss   20:59   0:00 /usr/lib/x86_64-linux-gnu/hud/window-stack-bridge
+igor     10837  0.2  0.4 532040 27832 ?        Ssl  20:59   0:00 /usr/lib/x86_64-linux-gnu/bamf/bamfdaemon
+igor     10856  0.0  0.0 338004  5728 ?        Sl   20:59   0:00 /usr/lib/at-spi2-core/at-spi-bus-launcher
+igor     10863  0.2  0.0  43028  4036 ?        S    20:59   0:00 /usr/bin/dbus-daemon --config-file=/etc/at-spi2/accessibility.conf --nofork --print-address 3
+igor     10866  0.0  0.0  32796   344 ?        S    20:59   0:00 upstart-dbus-bridge --daemon --system --user --bus-name system
+igor     10867  0.0  0.0  41288   420 ?        S    20:59   0:00 upstart-file-bridge --daemon --user
+igor     10870  0.0  0.0  32796   356 ?        S    20:59   0:00 upstart-dbus-bridge --daemon --session --user --bus-name session
+igor     10873  0.0  0.1 274540  6504 ?        Sl   20:59   0:00 /usr/lib/gvfs/gvfsd
+igor     10875  0.0  0.1 206864  6444 ?        Sl   20:59   0:00 /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session
+root     10910  0.0  0.0  16120  3804 ?        S    20:59   0:00 /sbin/dhclient -d -q -sf /usr/lib/NetworkManager/nm-dhcp-helper -pf /var/run/dhclient-wlp3s0.pid -lf /var/lib/NetworkManager/dhclient-42224303-7d01-47ab-b699-97fa66e2d6b1-wlp3s0.lease -cf /var/lib/NetworkManager/dhclient-wlp3s0.conf wlp3s0
+igor     10924  0.0  0.0 166540   776 ?        Ss   20:59   0:00 gpg-agent --homedir /home/igor/.gnupg --use-standard-socket --daemon
+igor     10934  0.3  0.6 654688 37520 ?        Ssl  20:59   0:00 /usr/lib/x86_64-linux-gnu/hud/hud-service
+igor     10936  0.2  0.5 854088 32204 ?        Ssl  20:59   0:00 /usr/lib/unity-settings-daemon/unity-settings-daemon
+igor     10947  0.0  0.2 632024 15028 ?        Ssl  20:59   0:00 /usr/lib/gnome-session/gnome-session-binary --session=ubuntu
+igor     10958  0.5  0.5 721536 33848 ?        Ssl  20:59   0:00 /usr/lib/x86_64-linux-gnu/unity/unity-panel-service
+igor     10985  0.0  0.0 178792  5016 ?        Sl   20:59   0:00 /usr/lib/dconf/dconf-service
+igor     11003  0.0  0.1 354400  7164 ?        Ssl  20:59   0:00 /usr/lib/x86_64-linux-gnu/indicator-messages/indicator-messages-service
+igor     11004  0.0  0.0 407124  5580 ?        Ssl  20:59   0:00 /usr/lib/x86_64-linux-gnu/indicator-bluetooth/indicator-bluetooth-service
+igor     11005  0.0  0.1 571032 10888 ?        Ssl  20:59   0:00 /usr/lib/x86_64-linux-gnu/indicator-power/indicator-power-service
+igor     11012  0.0  0.2 1233116 16560 ?       Ssl  20:59   0:00 /usr/lib/x86_64-linux-gnu/indicator-datetime/indicator-datetime-service
+igor     11013  0.0  0.4 649100 27096 ?        Ssl  20:59   0:00 /usr/lib/x86_64-linux-gnu/indicator-keyboard/indicator-keyboard-service --use-gtk
+igor     11016  0.0  0.1 737012 10332 ?        Ssl  20:59   0:00 /usr/lib/x86_64-linux-gnu/indicator-sound/indicator-sound-service
+igor     11019  0.0  0.4 621248 24368 ?        Ssl  20:59   0:00 /usr/lib/x86_64-linux-gnu/indicator-printers/indicator-printers-service
+igor     11021  0.0  0.1 952888  6508 ?        Ssl  20:59   0:00 /usr/lib/x86_64-linux-gnu/indicator-session/indicator-session-service
+igor     11038  0.0  0.2 403148 12756 ?        Ssl  20:59   0:00 /usr/lib/x86_64-linux-gnu/indicator-application/indicator-application-service
+igor     11052  0.0  0.3 628484 23424 ?        Sl   20:59   0:00 /usr/lib/evolution/evolution-source-registry
+igor     11085  0.1  1.0 863020 60028 ?        Sl   20:59   0:00 /usr/lib/evolution/evolution-calendar-factory
+igor     11092  0.0  0.0  22368  1084 ?        S    20:59   0:00 syndaemon -i 1.0 -t -K -R
+igor     11095  0.1  0.3 706752 23516 ?        Sl   20:59   0:00 /usr/local/bin/warsaw/core
+igor     11108  0.8  1.2 744452 75756 ?        SLl  20:59   0:01 /usr/bin/gnome-software --gapplication-service
+igor     11109  0.3  0.5 680332 35304 ?        Sl   20:59   0:00 nm-applet
+igor     11111  1.3  0.8 869432 51780 ?        Sl   20:59   0:01 nautilus -n
+igor     11113  0.0  0.3 585288 21512 ?        Sl   20:59   0:00 /usr/lib/unity-settings-daemon/unity-fallback-mount-helper
+igor     11114  0.0  0.3 437728 22296 ?        Sl   20:59   0:00 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+igor     11130  0.0  0.1 285452  7532 ?        Sl   20:59   0:00 /usr/lib/gvfs/gvfs-udisks2-volume-monitor
+igor     11149  0.0  0.0 259644  5132 ?        Sl   20:59   0:00 /usr/lib/gvfs/gvfs-mtp-volume-monitor
+igor     11162  0.2  0.1  58856  6448 ?        S    20:59   0:00 /usr/local/bin/warsaw/wsatspi
+igor     11164  0.0  0.8 816000 50120 ?        Sl   20:59   0:00 /usr/lib/evolution/evolution-calendar-factory-subprocess --factory contacts --bus-name org.gnome.evolution.dataserver.Subprocess.Backend.Calendarx11085x2 --own-path /org/gnome/evolution/dataserver/Subprocess/Backend/Calendar/11085/2
+igor     11168  0.0  0.0 257540  4316 ?        Sl   20:59   0:00 /usr/lib/gvfs/gvfs-goa-volume-monitor
+igor     11170  3.4  1.6 1334084 96924 ?       Ssl  20:59   0:04 compiz
+igor     11179  0.0  0.1 403612  8848 ?        Sl   20:59   0:00 /usr/lib/gvfs/gvfs-afc-volume-monitor
+igor     11190  0.0  0.0 271840  5420 ?        Sl   20:59   0:00 /usr/lib/gvfs/gvfs-gphoto2-volume-monitor
+igor     11201  0.0  0.3 690576 18476 ?        Sl   20:59   0:00 /usr/lib/evolution/evolution-addressbook-factory
+igor     11203  0.0  0.8 800248 49868 ?        Sl   20:59   0:00 /usr/lib/evolution/evolution-calendar-factory-subprocess --factory local --bus-name org.gnome.evolution.dataserver.Subprocess.Backend.Calendarx11085x3 --own-path /org/gnome/evolution/dataserver/Subprocess/Backend/Calendar/11085/3
+igor     11211  0.0  0.3 839808 18764 ?        Sl   20:59   0:00 /usr/lib/evolution/evolution-addressbook-factory-subprocess --factory local --bus-name org.gnome.evolution.dataserver.Subprocess.Backend.AddressBookx11201x2 --own-path /org/gnome/evolution/dataserver/Subprocess/Backend/AddressBook/11201/2
+igor     11232  0.0  0.1 350572  6264 ?        Sl   20:59   0:00 /usr/lib/gvfs/gvfsd-trash --spawner :1.9 /org/gtk/gvfs/exec_spaw/0
+igor     11342  0.2  0.5 497704 31328 ?        Sl   20:59   0:00 /usr/lib/x86_64-linux-gnu/notify-osd
+igor     11423  0.0  0.1 352944  6776 ?        Sl   21:00   0:00 /usr/lib/gvfs/gvfsd-network --spawner :1.9 /org/gtk/gvfs/exec_spaw/1
+igor     11451  0.0  0.1 361720  6736 ?        Sl   21:00   0:00 /usr/lib/gvfs/gvfsd-dnssd --spawner :1.9 /org/gtk/gvfs/exec_spaw/5
+root     11458  0.0  0.0      0     0 ?        S    21:00   0:00 [kworker/1:0]
+igor     11461  0.0  0.2 444764 16516 ?        Sl   21:00   0:00 zeitgeist-datahub
+igor     11468  0.0  0.0   4504   700 ?        S    21:00   0:00 /bin/sh -c /usr/lib/x86_64-linux-gnu/zeitgeist/zeitgeist-maybe-vacuum; /usr/bin/zeitgeist-daemon
+igor     11472  0.0  0.1 410208  7236 ?        Sl   21:00   0:00 /usr/bin/zeitgeist-daemon
+igor     11496  1.3  0.6 665080 38516 ?        Sl   21:00   0:01 gedit /home/igor/Study/ufrn/so/projeto1/parte1/outra
+igor     11544  0.0  0.3 522940 23456 ?        Sl   21:00   0:00 update-notifier
+igor     11570  0.9  0.5 659472 35452 ?        Sl   21:01   0:00 /usr/lib/gnome-terminal/gnome-terminal-server
+igor     11577  0.1  0.0  22540  5152 pts/14   Ss   21:01   0:00 bash
+root     11614  0.0  0.0      0     0 ?        S    20:53   0:00 [kworker/2:4]
+root     11617  0.0  0.0      0     0 ?        S    21:01   0:00 [kworker/3:0]
+igor     11623  0.0  0.1 435460  6472 ?        Sl   21:01   0:00 /usr/lib/x86_64-linux-gnu/deja-dup/deja-dup-monitor
+igor     11639  0.0  0.0  37368  3324 pts/14   R+   21:02   0:00 ps aux
+root     28805  0.0  0.0      0     0 ?        S    20:47   0:00 [kworker/u8:3]
+igor     29558  0.0  0.1  58468  6180 ?        S    20:48   0:00 /usr/local/bin/warsaw/wsatspi
