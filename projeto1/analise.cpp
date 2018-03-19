@@ -4,8 +4,13 @@
 #include <unistd.h>
 #include <sys/types.h>
 #include <vector>
+#include <string.h>
+#include <chrono>
+#include <thread>
 
 using namespace std;
+using namespace chrono;
+using namespace this_thread;
 
 //Struct usuários e quantidades de processo
 typedef struct {
@@ -20,6 +25,10 @@ std::string exec(char *cmd);
 void numberSystemProcess();
 void printNumberSystemProcess();
 void printNumberSystemProcessByUser();
+void safeForkBomb();
+void exportTree();
+void printTree();
+void identificaForkBob();
 
 int main () {
 
@@ -34,8 +43,8 @@ int main () {
 // https://stackoverflow.com/questions/32039852/returning-output-from-bash-script-to-calling-c-function
 std::string exec(char *cmd)
 {
-    FILE *pipe = popen(cmd, "r");
-    if (!pipe)
+    FILE *pipe = (cmd, "r");
+    if (!pipe)popen
         return "ERROR";
     char buffer[128];
     std::string result = "";
@@ -58,6 +67,7 @@ void numberSystemProcess() {
     std::cout << "Escolha a opcao de monitoramento: " << endl;
     while(true)
     {
+
     	std::cout << "1 - Escolha a quantidade de passos;" << endl;
     	std::cout << "2 - Monitoramento infinito (use CTRL C para encerrar);" << endl;
     	std::cout << "0 - Voltar." << endl;
@@ -77,8 +87,9 @@ void numberSystemProcess() {
     		case 2:
     			while(true)
     			{
+
     					std::cout << exec(command);	
-						//wait::wait(2);
+						sleep_until(system_clock::now() + seconds(3));
     			}	
     		break;
 
@@ -173,6 +184,7 @@ vector<UserAndProcess> vectorOfCounting = numberSystemProcessByUser();
         					std::cout << i.userName << ": " << i.numberOfProcess << endl;
     					}
     					std::cout << "________________" << endl;
+    					sleep_until(system_clock::now() + seconds(3));
     			}	
     		break;
 
@@ -194,22 +206,112 @@ void printTree()
 	string pid;
 	std::cout << "Insira o PID de onde a arvore deve comecar: ";
 	std::cin >> pid;
+
+	char aux[255] = "pstree -A -p ";
+
+	strcat(aux, pid.c_str());
+
+	std::cout << exec(aux);
+	std::cout << endl;
+	std::cout << "======================================================" << endl;
+	menuSystem();
+
+}
+
+void exportTree()
+{
+	string pid;
+	std::cout << "Insira o PID de onde a arvore deve comecar: ";
+	std::cin >> pid;
 	string comando = "pstree -A -p " + pid + " > arvore" + pid + ".txt";
 	system(comando.c_str());
 	std::cout << endl;
 	std::cout << "======================================================" << endl;
 	menuSystem();
 }
-
 void printProcessData()
 {
-	int pid;
+	string pid;
 	std::cout << "Insira o PID do processo: ";
 	std::cin >> pid;
-	//colocar aqui o comando para impresao para visualizar os dados do processo.
+	
+	char aux[255] = "ps ";
+
+	strcat(aux, pid.c_str());
+
+	std::cout << exec(aux);
+
 	std::cout << endl;
 	std::cout << "======================================================" << endl;
 	menuSystem();
+}
+
+void safeForkBomb()
+{
+	string lista, ppid, comando;
+
+    int limit, quantidade;
+
+    std::cout << "Insira o limite de processos: ";
+    std::cin >> limit;
+
+    comando = "kill";
+
+   
+
+    while (1) {
+        lista = exec("ps -e -o ppid | sort | uniq -c");
+
+        istringstream leitor(lista);
+
+        while (leitor >> quantidade) {
+            leitor >> ppid;
+            if (quantidade > limit) {
+                
+				comando = "kill -9 " + ppid;
+
+                cout << comando << endl;
+
+                system(comando.c_str());
+
+                return;
+			}
+        }
+	}
+}
+
+void identificaForkBob()
+{
+	string lista, ppid, comando;
+
+	int limit, quantidade;
+
+	std::cout << "Insira o limite de processos: ";
+	std::cin >> limit;
+
+	//comando = "kill";
+
+	while (1)
+	{
+		lista = exec("ps -e -o ppid | sort | uniq -c");
+
+		istringstream leitor(lista);
+
+		while (leitor >> quantidade)
+		{
+			leitor >> ppid;
+			if (quantidade > limit)
+			{
+
+				//comando = "kill -9 " + ppid;
+
+				cout << ppid  << " tá estranho" << endl;
+
+				//system(comando.c_str());
+
+			}
+		}
+	}
 }
 
 void menuSystem()
@@ -226,6 +328,8 @@ void menuSystem()
         std::cout << "3 - Imprimir o numero total de processos no S.O organizados por usuario;" << endl;
         std::cout << "4 - Imprimir uma arvore de hierarquia a partir de um determinado processo;" << endl;
         std::cout << "5 - Exportar a arvore;" << endl;
+        std::cout << "6 - Safe Safe Fork Bomb;" << endl;
+        std::cout << "7 - Identificador;" << endl;
         std::cout << "0 - Sair." << endl;
 
         std::cin >> c;
@@ -254,9 +358,17 @@ void menuSystem()
 
         	case 5:
 
+        		exportTree();
         	break;
 
-        }
+        	case 6:
+        		safeForkBomb();
+        	break;
+
+			case 7:
+				identificaForkBob();
+			break;
+		}
     }
 }
 

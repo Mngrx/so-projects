@@ -18,14 +18,14 @@ sleep_until(system_clock::now() + seconds(3));
 
    
 std::string exec(char *cmd);
-void menuSystem();
-void blinkLed(int led1, int led2, int led3);
-void ledHigh(int led);
-void ledLow(int led);
+void menuSystem(); //menu de usabilidade
+void blinkLed(int led1, int led2, int led3); //piscar todos os leds
+void valueHigh(int pin); //setar valor de um pino como low
+void valueLow(int pin); //setar valor de um pino como low
 bool interruption();
 void killProcess(string pid);
-void gpioReady(int pin, string direction);
-
+bool gpioReady(int pin, string direction);
+void panic();
 
 int main () {
 
@@ -54,3 +54,80 @@ std::string exec(char *cmd)
     return result;
 }
 
+bool gpioReady(int pin, string direction) {
+    
+    if (pin < 1) {
+        cerr << "Pin Inválido!" << endl;
+        return false;
+    }
+
+    if (!(direction == "out" || direction == "in")) {
+        cerr << "Direção inválida!" << endl;
+        return false;
+    }
+
+    string _pin = to_string(pin);
+
+    string comando = "echo " + _pin + " > /sys/class/gpio/export";
+
+    system(comando.c_str());
+
+    comando = "echo " + direction + " > /sys/class/gpio/gpio"+_pin+"/direction";
+
+    system(comando.c_str());
+
+    return true;
+
+}
+
+void valueLow(int pin) {
+    string _pin = to_string(pin);
+
+    string comando = "echo 0 > /sys/class/gpio/gpio" + _pin + "/value";
+
+    system(comando.c_str());
+}
+ 
+void valueHigh(int pin)
+{
+    string _pin = to_string(pin);
+
+    string comando = "echo 1 > /sys/class/gpio/gpio" + _pin + "/value";
+    
+    system(comando.c_str());
+}
+
+void blinkLed(int led1, int led2, int led3) {
+
+    valueHigh(led1);
+    valueHigh(led2);
+    valueHigh(led3);
+    sleep_until(system_clock::now() + seconds(1));
+    valueLow(led1);
+    valueLow(led2);
+    valueLow(led3);
+    sleep_until(system_clock::now() + seconds(1));
+}
+
+void panic(string pid, int led1, int led2, int led3) {
+
+    while (interruption()) {
+        blinkLed(led1, led2, led3);
+    }
+
+    killProcess(pid);
+
+    return;
+}
+
+void killProcess(string pid) {
+
+    string comando = "kill -9 " + pid;
+
+    system(comando.c_str());
+
+}
+
+bool interruption() {
+    
+}
