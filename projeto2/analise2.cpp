@@ -16,6 +16,10 @@ usar para dar o wait
 sleep_until(system_clock::now() + seconds(3));
 */
 
+/*
+* ps -e -o %mem | sort -r
+* ps -e -o %cpu | sort -r
+*/
    
 std::string exec(char *cmd);
 void menuSystem(); //menu de usabilidade
@@ -129,5 +133,5 @@ void killProcess(string pid) {
 }
 
 bool interruption() {
-    
+ 
 }
