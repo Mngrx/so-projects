@@ -7,6 +7,7 @@
 #include <string.h>
 #include <chrono>
 #include <thread>
+#include <csignal>
 
 #define LED_VERDE 50
 #define LED_VERMELHO 31
@@ -34,14 +35,19 @@ void valueLow(int pin); //setar valor de um pino como low
 bool buttonPress(int pin); //retorna se um botão foi pressionado ou não
 void killProcess(string pid); //mata o processo do pid passado
 bool gpioReady(int pin, string direction); //prepara a gpio e muda sua direção
+bool gpioFinish(int pin); //desaloca a gpio 
 void dontpanic(string pid, int led1, int led2, int led3, int button); //ativa o estado de pânico
-float totalConsumoCPU();
-float totalConsumoMEMO();
-string maiorConsumidor(bool cpuMemo);
-void monitorar(string tipo);
+float totalConsumoCPU(); //captura a somatória do consumo da cpu
+float totalConsumoMEMO(); //captura a somatória do consumo da memória
+string maiorConsumidor(bool cpuMemo); //captura qual processo está consumindo mais
+void monitorar(string tipo); //realiza monitoramento
+void signalHandler(int sig); //função para finalizar corretamente o programa
+
 
 int main()
 {
+
+    signal(SIGINT, signalHandler);
 
     gpioReady(BUTTON, "in");
     gpioReady(LED_AMARELO, "out");
@@ -72,6 +78,34 @@ std::string exec(const char *cmd)
     pclose(pipe);
     return result;
 }
+
+void signalHandler(int sig) {
+
+    gpioFinish(LED_VERMELHO);
+    gpioFinish(LED_VERDE);
+    gpioFinish(LED_AMARELO);
+    gpioFinish(BUTTON);
+
+    cout << "Programa finalizado com sucesso!\n" << endl;
+    exit(0);
+}
+
+bool gpioFinish(int pin) {
+
+    if (pin < 1) {
+        cerr << "Pin Inválido!" << endl;
+        return false;
+    }
+
+    string _pin = to_string(pin);
+
+    string comando = "echo " + _pin + " > /sys/class/gpio/unexport";
+
+    system(comando.c_str());
+
+    return true;
+}
+
 
 bool gpioReady(int pin, string direction) {
     
