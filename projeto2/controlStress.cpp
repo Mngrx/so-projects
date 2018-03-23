@@ -1,3 +1,9 @@
+/*
+ * @file stressControl.cpp
+ * @brief Universidade Federal do Rio Grande do Norte (UFRN)
+ * @brief Projeto de Sistemas Operacionais
+ * @author Jhonattan Cabral e Igor Nogueira.
+ */
 #include <iostream>
 #include <cstdlib>
 
@@ -12,7 +18,9 @@ int main()
 	return 0;
 }
 
-
+/*
+ *@brief Menu de acesso
+ */
 void menuSystem()
 {
 	short int c = 0;
@@ -39,6 +47,9 @@ void menuSystem()
 	}
 }
 
+/*
+ *@brief Faz o controle de consumo do programa "stress" utilizando o cpulimit
+ */
 void stressControlCPU()
 {
 	short int c = 0;
@@ -74,6 +85,9 @@ void stressControlCPU()
 	
 }
 
+/*
+ *@brief Stressa e controla o consumo de memoria utilizando o comando stress --mv
+ */
 void stressControlMEMO() {
 
 	short int c = 0;
