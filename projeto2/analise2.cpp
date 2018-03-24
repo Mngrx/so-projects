@@ -57,11 +57,11 @@ int main()
     return 0;
 }
 
-/*@brief Função que executa um comando no terminal e retorna o que seria printao *como string.
- *@breaf Creditos: https://stackoverflow.com/questions/32039852/returning-output *-from-bash-script-to-calling-c-function.
+/*@brief Função que executa um comando no terminal e retorna o que seria printao como string.
+ *@breaf Creditos: https://stackoverflow.com/questions/32039852/returning-output-from-bash-script-to-calling-c-function.
  *@param cmd - Comando no qual o resultado sera retornado em forma de string.
  */
-std::string exec(const char *cmd)
+string exec(const char *cmd)
 {
     FILE *pipe = popen(cmd, "r");
     if (!pipe)
